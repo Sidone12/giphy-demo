@@ -38,7 +38,7 @@ const currentUser = computed<Gif| undefined>(() => giphsStore.giphs.find(el => e
 
             </v-card-text>
             <v-card-actions>
-                <v-btn @click="router.push(`/giphy/${currentUser.id}`)" variant="text" color="deep-purple-accent-4">
+                <v-btn @click="router.push(`/giphy/${currentUser.id}`)" >
                     Go back
                 </v-btn>
             </v-card-actions>

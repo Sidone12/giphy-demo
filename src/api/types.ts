@@ -1,6 +1,3 @@
-export type ApiMethod = 'trending' | 'search';
-
-
 export interface GifImage {
   height: string;
   width: string;
