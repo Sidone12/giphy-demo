@@ -19,26 +19,26 @@ const currentUser = computed<Gif| undefined>(() => giphsStore.giphs.find(el => e
     <div class="d-flex justify-center ">
         <v-card max-width="600" width="600">
             <v-card-text>
-                <v-img class="my-5" height="75%" cover :src="`${currentUser.user.banner_image}`"></v-img>
-                <v-avatar class="mb-5" size="80" :image="currentUser.user.avatar_url"></v-avatar>
+                <v-img class="my-5" height="75%" cover :src="`${currentUser?.user?.banner_image}`"></v-img>
+                <v-avatar class="mb-5" size="80" :image="currentUser?.user?.avatar_url"></v-avatar>
                 <div></div>
                 <p class="text-h4 text--primary">
-                    {{ currentUser.user.display_name }}
+                    {{ currentUser?.user?.display_name }}
                 </p>
-                <p>Username: {{ currentUser.user.username }}</p>
+                <p>Username: {{ currentUser?.user.username }}</p>
                 <div class="text--primary">
-                    {{ currentUser.user.description }}
+                    {{ currentUser?.user.description }}
                 </div>
                 <div class="text--primary">
-                    Profile: <a target="_blank" :href="`http://${currentUser.user.profile_url}`">{{ currentUser.user.profile_url
+                    Profile: <a target="_blank" :href="`http://${currentUser?.user.profile_url}`">{{ currentUser?.user.profile_url
                     }}</a>
                 </div>
-                <p>instagram: <a target="_blank" :href="`http://${currentUser.user.instagram_url}`">{{ currentUser.user.instagram_url
+                <p>instagram: <a target="_blank" :href="`http://${currentUser?.user.instagram_url}`">{{ currentUser?.user.instagram_url
                 }}</a></p>
 
             </v-card-text>
             <v-card-actions>
-                <v-btn @click="router.push(`/giphy/${currentUser.id}`)" >
+                <v-btn @click="router.push(`/giphy/${currentUser?.id}`)" >
                     Go back
                 </v-btn>
             </v-card-actions>

@@ -49,10 +49,9 @@ onUnmounted(() => {
 
     <v-col v-for="item in array" cols="6" md="4" class="d-flex child-flex">
       <router-link class="link"  :to="`/giphy/${item.id}`">
-     
       <div>
-        <v-img width="300" height="300" :src="item.images.fixed_width.url" cover></v-img>
-        <span @click="copyUrl(item)" class="mdi mdi-link icon"></span>
+        <v-img   aspect-ratio="1" :lazy-src="item.images.fixed_width.url" :src="item.images.fixed_width.url" cover></v-img>
+        <span @click.prevent="copyUrl(item)" class="mdi mdi-link icon"></span>
       </div>
     </router-link>
     </v-col>

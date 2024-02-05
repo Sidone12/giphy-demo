@@ -1,3 +1,6 @@
+export type ApiMethod = 'trending' | 'search';
+
+
 export interface GifImage {
   height: string;
   width: string;
@@ -30,6 +33,18 @@ export interface GifAnalytics {
     url: string;
   };
 }
+export interface User {
+  avatar_url: string;
+  banner_image: string;
+  banner_url: string;
+  profile_url: string;
+  username: string;
+  display_name: string;
+  description: string;
+  instagram_url: string;
+  website_url: string;
+  is_verified: boolean;
+}
 
 export interface Gif {
   type: string;
@@ -52,4 +67,5 @@ export interface Gif {
   images: GifImages;
   analytics_response_payload: string;
   analytics: GifAnalytics;
+  user: User
 }
