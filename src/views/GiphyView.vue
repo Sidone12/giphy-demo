@@ -18,7 +18,7 @@ const randomGiphys = computed(() => giphsStore.giphs);
 
 <template>
     <div>
-       <div class="d-flex justify-center ma-10">
+       <div  class="d-flex justify-end ma-10">
         <v-btn @click="router.push('/')">
             Go back
         </v-btn>
