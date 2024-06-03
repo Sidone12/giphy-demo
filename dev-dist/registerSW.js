@@ -1,1 +1,0 @@
-if('serviceWorker' in navigator) navigator.serviceWorker.register('/giphy-demo/dev-sw.js?dev-sw', { scope: '/giphy-demo/', type: 'classic' })

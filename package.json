@@ -4,8 +4,8 @@
   "homepage": "https://sidone12.github.io/giphy-demo/",
   "private": true,
   "scripts": {
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "run-p type-check build-only",
     "preview": "vite preview",
@@ -17,7 +17,7 @@
     "pinia": "^2.0.28",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6",
-    "vuetify": "^3.5.2"
+    "vuetify": "^3.6.8"
   },
   "devDependencies": {
     "@types/node": "^18.11.12",
